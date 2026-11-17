@@ -1,0 +1,39 @@
+{
+  "name": "@pisos/cms-client",
+  "version": "0.1.0",
+  "description": "Data layer for custom sites fed by the pisos-spc CMS (public GraphQL /t/<slug>/graphql/). No visual components.",
+  "private": true,
+  "type": "module",
+  "license": "UNLICENSED",
+  "files": ["src", "README.md", "CHANGELOG.md"],
+  "exports": {
+    "./graphql": "./src/graphql.ts",
+    "./extra": "./src/extra.ts",
+    "./types": "./src/types.ts",
+    "./modules": "./src/modules.ts",
+    "./site-url": "./src/site-url.ts",
+    "./module-seo": "./src/module-seo.ts",
+    "./landing-page-seo": "./src/landing-page-seo.ts",
+    "./product-gallery": "./src/product-gallery.ts",
+    "./strip-markdown": "./src/strip-markdown.ts",
+    "./redirects": "./src/redirects.ts",
+    "./revalidate": "./src/revalidate.ts",
+    "./contact-proxy": "./src/contact-proxy.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "next": ">=15.0.0",
+    "react": ">=19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "next": "15.5.14",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@8.10.5"
+}
